@@ -4,9 +4,9 @@
 
 > I want to thank all of you, helping, advising and supporting me. Especially:
 >
-> - **@Hampo**, **Sterz**, **@IN2-Moist**, **1337Zero** and **Wolfry** for their help provided to make this script!
-> - **@sub1to** and **Cynical Bastard**, for this awesome menu!
-> - **@danierutu**, for letting me host this documentation in the official 2Take1Docs site!
+> - **Proddy**, **Sterz**, **IN2-Moist**, **1337Zero** and **Wolfry** for their help provided to make this script!
+> - **sub1to** and **Cynical Bastard**, for this awesome menu!
+> - **Danierutu**, for letting me host this documentation in the official 2Take1Docs site!
 > - And all People, who wrote a great suggestion for the script!
 
 ## Setup
@@ -20,6 +20,7 @@ If done right, your `scripts` folder should contain:
 - `2Take1Script\` (folder with additional assets)
 
 ![help1](https://drive.google.com/uc?export=view&id=1O0wA4RQPIJheNn0mx5adV2_KXUifkMot)
+
 ![help2](https://drive.google.com/uc?export=view&id=1u9-HH0PPvOPcfafiBz2U1PCyi-UdHBB3)
 
 Once all the above is done, you can straight go to [**Scripts**](https://docs.2take1.menu/features/local/scripts) and select **2Take1Script.lua**.
