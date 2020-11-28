@@ -11,7 +11,7 @@
 
 ## Setup
 
-Download the latest script release from [**#lua-script-share**](discord:/channels/570999086874886154/614871694938472507/) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script.md/files/5610188/2Take1Script.zip). The scripts come in a `2Take1Script.zip` file.
+Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script.md/files/5610188/2Take1Script.zip). The scripts come in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://docs.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
