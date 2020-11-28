@@ -1,6 +1,6 @@
-![title](/pics/2Take1Script.gif)
-
 # 2Take1Script
+
+![title](/pics/2Take1Script.gif)
 
 2Take1Script is a script created by myself, with the help of others.
 
