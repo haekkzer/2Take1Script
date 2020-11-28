@@ -6,12 +6,12 @@
 >
 > - **Proddy**, **Sterz**, **IN2-Moist**, **1337Zero** and **Wolfry** for their help provided to make this script!
 > - **sub1to** and **Cynical Bastard**, for this awesome menu!
-> - **Danierutu**, for letting me host this documentation in the official 2Take1Docs site!
+> - **Danierutu**, for linking my script with documentation in the official 2Take1Docs site!
 > - And all People, who wrote a great suggestion for the script!
 
 ## Setup
 
-Download the latest script release from [**#lua-script-share**](discord:/channels/570999086874886154/614871694938472507/). The scripts come in a `2Take1Script.zip` file.
+Download the latest script release from [**#lua-script-share**](discord:/channels/570999086874886154/614871694938472507/) or from this git-repo. The scripts come in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://docs.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
@@ -19,9 +19,9 @@ If done right, your `scripts` folder should contain:
 - `2Take1Script.lua` (main script)
 - `2Take1Script\` (folder with additional assets)
 
-![help1](https://drive.google.com/uc?export=view&id=1O0wA4RQPIJheNn0mx5adV2_KXUifkMot)
+![help1](/setup_01.jpg)
 
-![help2](https://drive.google.com/uc?export=view&id=1u9-HH0PPvOPcfafiBz2U1PCyi-UdHBB3)
+![help2](/setup_02.jpg)
 
 Once all the above is done, you can straight go to [**Scripts**](https://docs.2take1.menu/features/local/scripts) and select **2Take1Script.lua**.
 
@@ -43,12 +43,14 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 ### Modders
 
 - Remember every Modder
+- Unmark Friends
 - Modder Detections (see [note 2](#notes))
   - Max Speed Bypass
   - Illegal Name
   - Modded IP / SCID
   - Modded Net-Events
   - Forcing Script-Host (WIP)
+  - Modded Script Event
 
 ### Lobby
 
@@ -139,6 +141,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Add Player to Blacklist
 - Miscellaneous
   - Send SMSs to Player
+    - Spam SMS X times (25-5000)
     - Custom SMS input
     - Send his SCID & IP
     - Send SMS from a custom presaved list
@@ -193,6 +196,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Rocket Propulsion (Visual)
   - Equip Miniguns on hands
   - Drive Robot
+  - Self Destruction
 - Custom Vehicles
   - Preview Custom Vehicles
   - Delete Custom Vehicles
@@ -220,6 +224,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Flying Animals
 - Standard Models
 - Safe Model Change
+- Revert back Outfit
 - Fix endless loading Screen
 
 ### PTFX
@@ -294,7 +299,31 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Force Police Outfit
 - You've Been Banned
 - Swap Vehicle Seat
-- Fill Snacks and Armor
+- Stats
+  - Fill Snacks and Armor
+  - Set KD (Kills / Deaths)
+  - Unlock Fast-Run Ability
+  - Casino Heist Control
+    - Reset Heist
+    - Quick start, random
+    - Highest Payout (worst crew-members)
+    - Manual Mode
+      - Reset last Approach
+      - Silent, BigCon, Aggressive
+      - Money, Gold, Art, Diamond
+      - Unlock Points of Interests
+      - Unlock Access Points
+      - Confirm First Board
+      - Crew-Member-Weapon, Payout
+      - Crew-Member-Driver, Payout
+      - Crew-Member-Hacker, Payout
+      - Weapon Variation
+      - Vehicle Variation
+      - Remove Duggan Heavy Gurds
+      - Equip Heavy Armor
+      - Scan Card Level
+      - Mask Variation
+      - Confirm Second Board
 - Player History
   - Store info in each Lobby subcategory
     - Lobby info (see [note 11](#notes))
@@ -312,6 +341,8 @@ If you have a problem loading this script, have a look [**here**](#common-questi
       - Is `<name>` in this lobby?
       - Was he a modder?
 - Utils
+  - Delete Custom Outfits
+  - Delete Custom Vehicles
   - Load Scripts (WIP)
   - autoexec Scripts from folder 'autoload' (see [note 12](#notes))
   - Leave-Session
@@ -671,7 +702,7 @@ _2t1s_weapons = {
 - After disabling **2Take1Script-Parent**, you have to reload the script
 - Some features won't work properly if the distance between you and the target is too long.
 - When the script gets autoloaded (for example, with an `autoexec.lua`), the **Event Listeners** (Chat features, etc) might not work.
-- If you crash on inject / script load, delete the `2Take1Script.ini` file in the `2Take1Script` folder.
+- If you crash on inject / script load, delete the `2Take1Script.ini` file in the `2Take1Script\Config` folder.
 - For some users Moist autoload folder will crash the game. -\> Instead use my autoload-Feature
 - Teleport to Waypoint will teleport you near a street.
 - Enabling Vehicle Colors might wont apply, press the Feature a few times.
@@ -712,7 +743,7 @@ After enabling this option, the script will sleep and then load all scripts with
 
 > Does it work after a GTA Update?
 
-- Chances are very high for all **Script Event** features to break is; everything else *should* be fine.
+- Chances are very high for all **Script Event** features to break; everything else *should* be fine.
 
 > Does it work after a 2T1 Update?
 
@@ -720,11 +751,11 @@ After enabling this option, the script will sleep and then load all scripts with
 
 > How do I reset the script config?
 
-- Delete the  `2Take1Script.ini` file in the  `2Take1Script\` folder.
+- Delete the  `2Take1Script.ini` file in the  `2Take1Script\Config` folder.
 
 > My game crashed when i load the script?
 
-- Delete the  `2Take1Script.ini` file in the  `2Take1Script\` folder.
+- Delete the  `2Take1Script.ini` file in the  `2Take1Script\Config` folder.
 
 > I dont see the Script in the menu?
 
@@ -765,6 +796,53 @@ After enabling this option, the script will sleep and then load all scripts with
 - Or just paste the code snippet above to your other `autoexec.lua`
 
 ## Changelog
+
+### 2020-11-28
+
+- Fixed not marking as a modder when detecting modded script event
+- Fixed Modded Script Event detection not checking all script events
+- Fixed lags caused by Player History
+- Fixed Lobby name when logging 100+ players in history
+- Added self changeable player tags for history (YHSFM)
+- Added Self Destruction -\> `Moveable Robot`
+- Added Spam SMS X times for Lobby- and Player-Features
+- Added new Sub-Parent `Stats` -\> `Miscellaneous`
+  - Added Set K/D
+  - Added Unlock Fast-Run Ability
+  - Added Casino Heist Control
+    - Reset Casino Heist
+    - Quick start, random
+    - Highest Payout (worst crew-members)
+    - Manual Mode
+      - Reset last Approach
+      - Select between: Silent, BigCon, Aggressive
+      - Select between: Money, Gold, Art, Diamond
+      - Unlock Points of Interests
+      - Unlock Access Points
+      - Confirm First Board
+      - Crew-Member-Weapon
+      - Crew-Member-Driver
+      - Crew-Member-Hacker
+      - Weapon Variation
+      - Vehicle Variation
+      - Remove Duggan Heavy Guards
+      - Equip Heavy Armor
+      - Scan Card Level
+      - Mask Variation
+      - Confirm Second Board
+- Moved `Fill Snacks and Armor` -\> `Stats`
+- Revert back outfit -\> `Better Animal Changer`
+- Removed Rat
+- Delete Modded Outfits -\> `Misc -> Utils`
+- Delete Modded Vehicles -\> `Misc -> Utils`
+- Unmark Friends -\> `Modder`
+
+### 2020-11-07
+
+- Removed "." from Modded Name Detection
+- Fixed Script Event / CEO Ban
+- Fixed "Add to Blacklist" / "Add to remember Modder" from Player History
+- Added Detection of modded Script Events
 
 ### 2020-11-02
 
