@@ -1,3 +1,5 @@
+![title](/pics/2Take1Script.gif)
+
 # 2Take1Script
 
 2Take1Script is a script created by myself, with the help of others.
@@ -19,9 +21,9 @@ If done right, your `scripts` folder should contain:
 - `2Take1Script.lua` (main script)
 - `2Take1Script\` (folder with additional assets)
 
-![help1](/setup_01.jpg)
+![help1](/pics/setup_01.jpg)
 
-![help2](/setup_02.jpg)
+![help2](/pics/setup_02.jpg)
 
 Once all the above is done, you can straight go to [**Scripts**](https://docs.2take1.menu/features/local/scripts) and select **2Take1Script.lua**.
 
