@@ -11,9 +11,19 @@
 > - **Danierutu**, for linking my script with documentation in the official 2Take1Docs site!
 > - And all People, who wrote a great suggestion for the script!
 
+### Table of Contents
+
+[**Setup**](#setup)  
+[**Features List**](#features-list)  
+[**Customize the Script**](#customize-the-script)  
+[**Known Issues**](#known-issues)  
+[**Notes**](#notes)  
+[**Common Questions**](#common-questions)  
+[**Changelog**](#changelog)
+
 ## Setup
 
-Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/files/5610188/2Take1Script.zip). The scripts come in a `2Take1Script.zip` file.
+Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/files/5652295/2Take1Script.zip). The scripts come in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://docs.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
@@ -37,6 +47,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Auto-Kick
 - Mark as Modder
 - Add Player by SCID
+- Remove SCID
 - Count Currently Blocked Players
 - Notify on Rockstar Admin SCID
 - *Auto-\[Kick/Crash\] R\* Admin* (disabled, see [note 1](#notes))
@@ -51,7 +62,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Illegal Name
   - Modded IP / SCID
   - Modded Net-Events
-  - Forcing Script-Host (WIP)
+  - Forcing Script-Host
   - Modded Script Event
 
 ### Lobby
@@ -96,6 +107,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Block - Passive
   - Unblock - Passive
 - Send SMSs to Lobby
+  - Spam SMS X Times
   - Custom SMS input
   - Send SCIDs & IPs
   - Send SMS from a custom presaved list
@@ -143,7 +155,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Add Player to Blacklist
 - Miscellaneous
   - Send SMSs to Player
-    - Spam SMS X times (25-5000)
     - Custom SMS input
     - Send his SCID & IP
     - Send SMS from a custom presaved list
@@ -232,7 +243,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 ### PTFX
 
 - Sparkling Ass
-- Sparkling Tires (WIP)
+- Sparkling Tires
 - Smoke Area
 - Fire Circle
 - Fire Fart
@@ -263,6 +274,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Teleport Own Vehicle to me and drive
   - Drive Own Vehicle
   - Teleport to Own Vehicle
+  - Always apply Vehicle Mods
   - Vehicle Colors
     - Set Speed in Milliseconds
     - Random Colors
@@ -294,11 +306,9 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Drive / Walk this Height
 - Weird Entity
 - Real Time (Clientside)
-- Random Clothes
 - Gameplay Clear Area
 - Clear Area
 - Auto Teleport to Waypoint
-- Force Police Outfit
 - You've Been Banned
 - Swap Vehicle Seat
 - Stats
@@ -306,12 +316,14 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Set KD (Kills / Deaths)
   - Unlock Fast-Run Ability
   - Casino Heist Control
+    - Teleport to Boards
     - Reset Heist
     - Quick start, random
     - Highest Payout (worst crew-members)
     - Manual Mode
       - Reset last Approach
       - Silent, BigCon, Aggressive
+      - Hard, Difficulty, Approach
       - Money, Gold, Art, Diamond
       - Unlock Points of Interests
       - Unlock Access Points
@@ -345,12 +357,9 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Utils
   - Delete Custom Outfits
   - Delete Custom Vehicles
-  - Load Scripts (WIP)
   - autoexec Scripts from folder 'autoload' (see [note 12](#notes))
   - Leave-Session
-  - Crash Yourself
   - Auto-Hostkick-Yourself
-  - Fuck You
 - IPL-Loader
   - Load ALL IPLs from File
   - Select starting line for range
@@ -375,15 +384,35 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - Set Formation
 - Enable Bodyguards
 
-### Aim Protection
+### Self
 
-- Enable Aim Protection
-- Anonymous Punishment
-- Ragdoll Player
-- Set on Fire
-- Kill Player
-- Remove Current Weapon
-- Kick Player
+- Random Clothes
+- Force Police Outfit
+- Health
+  - Fill Health
+  - Undead OTR
+  - Unlimited health-regen!
+  - Revert health after disabling Unlimited-regen
+  - Health Boosts
+    - Max Online Health: 328
+    - Health: 100
+    - Health: 500
+    - Freemode Beast: 2500
+    - Health: 10000
+    - Health: 25000
+    - Health: 50000
+    - Health: 100000
+    - Health: 5000000
+- Aim Protection
+  - Enable Aim Protection
+  - Anonymous Punishment
+  - Ragdoll Player
+  - Set on Fire
+  - Kill Player
+  - Remove Current Weapon
+  - Kick Player
+- Ragdoll
+- Ragdoll-Toggle
 
 ### Options
 
@@ -392,6 +421,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Reload 2Take1Hotkeys.ini
   - Hotkey Notifications
   - Print active Hotkeys
+  - Overwrite / Update File - `Hotkeys.ini`
 - Menu-Wide-Hotkeys
   - Menu-Wide Hotkey Notifications
   - Exclude Navigation Keys
@@ -665,24 +695,6 @@ _2t1s_sms_texts = {
 }
 ```
 
-### Modded SCIDs / IPs
-
-Edit the `_2t1s_modded_ips` and `_2t1s_modded_scids` global variables.
-
-```lua
-_2t1s_modded_ips = {
---  ip1, ip2, ip3, ...
-}
-```
-
-```lua
-_2t1s_modded_scids = {
---  scid1, scid2, scid3, ...
-}
-```
-
-The IPs are stored in [decimal](https://awebanalysis.com/en/decimal-to-ip-address/).
-
 ### Load Weapons
 
 Edit the `_2t1s_weapons` global variable.
@@ -798,6 +810,38 @@ After enabling this option, the script will sleep and then load all scripts with
 - Or just paste the code snippet above to your other `autoexec.lua`
 
 ## Changelog
+
+### 2020-12-07
+
+- Removed `Fuck You`, `Crash-Yourself`, `Send Msg to #general` and `Load Scripts`
+- Removed SMS loop for Online Players
+- Fixed `Delete Custom Outfits` and `Delete Custom Vehicles`
+- Fixed `Reset Script-Event-Log` and `Reset Net-Event-Log`
+- Fixed `Clear crashdumps`
+- Performance Improvements
+- Karma Scripts from Modders
+- Added Teleport to Boards -\> `Casino Heist Control`
+- Added "Missing" Stat back to Casino Manual Mode
+- Added new Sub-Parent `Self`
+- Moved Aim-Protection to -\> `Self`
+- Added Ragdoll to -\> `Self`
+- Added Ragdoll-Toggle to -\> `Self`
+- Added new Sub-Parent `Health` -\> `Self`
+  - Fill Health
+  - Undead OTR
+  - Quick regen health
+  - Unlimited health-regen!
+  - Revert health after disabling unlimited-regen
+  - Health Boosts
+  - Select from 9 preset Health-Boost values
+- Added changeable delay for `Random Clothes`
+- Moved `Random Clothes` -\> `Self`
+- Moved `Force Police Outfit` -\> `Self`
+- Added `Always apply Vehicle Mods` -\> `Misc` -\> `Vehicle`
+- Check if Self is the Driver, else vehicle mods wont be applied
+- Added Overwrite / Update File - Hotkeys.ini
+- Reworked Hotkeys.ini file, better handling with old / new entries
+- Added `Remove SCID` to `Blacklist`
 
 ### 2020-11-28
 
