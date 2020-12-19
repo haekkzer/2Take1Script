@@ -6,10 +6,12 @@
 
 > I want to thank all of you, helping, advising and supporting me. Especially:
 >
-> - **Proddy**, **Sterz**, **IN2-Moist**, **1337Zero** and **Wolfry** for their help provided to make this script!
+> - **Proddy**, **Sterz** and **SliceZombie**, for helping me with the LUA API.
+> - **IN2-Moist**, **1337Zero**, **C\*** and **Wolfry**, for their knownledge of how things work.
 > - **sub1to** and **Cynical Bastard**, for this awesome menu!
 > - **Danierutu**, for linking my script with documentation in the official 2Take1Docs site!
-> - And all People, who wrote a great suggestion for the script!
+> - **jhowkNx** and **TheSuspect**, for sharing of their created content, which could be included in the script. 
+> - And all other People, who wrote a great suggestion and / or found issues in script!
 
 ### Table of Contents
 
@@ -23,7 +25,7 @@
 
 ## Setup
 
-Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/files/5652295/2Take1Script.zip). The scripts come in a `2Take1Script.zip` file.
+Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/releases/download/2020-12-19/2Take1Script.zip). The script comes in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://docs.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
@@ -56,7 +58,10 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 ### Modders
 
 - Remember every Modder
+- Karma Scripts from Modders
 - Unmark Friends
+- Mark all as Modders
+- UN-Mark all as Modders
 - Modder Detections (see [note 2](#notes))
   - Max Speed Bypass
   - Illegal Name
@@ -99,6 +104,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Custom Script Events
     - Enter Custom Script Event with Parameters
     - Send Script Events from a Custom presaved list
+  - Send all to Island
   - Send all to Mission
   - CEO all Player
     - Ban
@@ -140,6 +146,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Custom Script Events
     - Enter Custom Script Event with Parameters
     - Send Script Events from a Custom presaved list
+  - Send Player to Island
   - Block - Passive
   - Unblock - Passive
   - Send Player to Mission
@@ -153,6 +160,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - TP to Player
 - TP Players Vehicle to me
 - Add Player to Blacklist
+- Remove Player from Blacklist
 - Miscellaneous
   - Send SMSs to Player
     - Custom SMS input
@@ -312,10 +320,12 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 - You've Been Banned
 - Swap Vehicle Seat
 - Stats
+  - Reset Orbital-Cannon Cooldown
+  - Remove Orbital-Cannon Cooldown
   - Fill Snacks and Armor
   - Set KD (Kills / Deaths)
   - Unlock Fast-Run Ability
-  - Casino Heist Control
+  - Casino Heist
     - Teleport to Boards
     - Reset Heist
     - Quick start, random
@@ -338,6 +348,13 @@ If you have a problem loading this script, have a look [**here**](#common-questi
       - Scan Card Level
       - Mask Variation
       - Confirm Second Board
+  - Cayo Perico Heist
+    - Teleport ontop of Submarine (WIP)
+    - Teleport to Heist-Table
+    - Remove Enemys
+    - Remove Cams
+    - Quick start, best Payout
+    - TP to Entrance (Fingerprint)
 - Player History
   - Store info in each Lobby subcategory
     - Lobby info (see [note 11](#notes))
@@ -376,14 +393,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Log Modder Flags
   - Enable Log from this Lua-Script
 
-### Bodyguards
-
-- Godmode for Bodyguards
-- Set Health of Bodyguards (5000-50000)
-- Equip Bodyguards with MG
-- Set Formation
-- Enable Bodyguards
-
 ### Self
 
 - Random Clothes
@@ -403,6 +412,8 @@ If you have a problem loading this script, have a look [**here**](#common-questi
     - Health: 50000
     - Health: 100000
     - Health: 5000000
+- Ragdoll
+- Ragdoll-Toggle
 - Aim Protection
   - Enable Aim Protection
   - Anonymous Punishment
@@ -411,8 +422,12 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Kill Player
   - Remove Current Weapon
   - Kick Player
-- Ragdoll
-- Ragdoll-Toggle
+- Bodyguards
+  - Godmode for Bodyguards
+  - Set Health of Bodyguards (5000-50000)
+  - Equip Bodyguards with MG
+  - Set Formation
+  - Enable Bodyguards
 
 ### Options
 
@@ -810,6 +825,25 @@ After enabling this option, the script will sleep and then load all scripts with
 - Or just paste the code snippet above to your other `autoexec.lua`
 
 ## Changelog
+
+### 2020-12-19
+
+- Updated for GTA:ONLINE 1.52
+- Moved `Bodyguards` -\> `Self`
+- Added `Reset Orbital-Cannon Cooldown` -\> `Stats`
+- Added `Remove Orbital-Cannon Cooldown` -\> `Stats`
+- Added `Remove Player from Blacklist` -\> `Online Script-Features`
+- Added `Mark all as Modders` -\> `Modders`
+- Added `UN-Mark all as Modders` -\> `Modders`
+- Added `Cayo Perico Heist` -\> `Stats`
+  - Added `Teleport ontop of Submarine (WIP)`
+  - Added `Teleport to Heist-Table`
+  - Added `Remove Enemys`
+  - Added `Remove Cams`
+  - Added `Quick start, best Payout`
+  - Added `TP to Entrance (Fingerprint)`
+- Added `Send Player to Island` -\> `Online Script-Features`
+- Added `Send all to Island` -\> `Lobby -> Script-Events`
 
 ### 2020-12-07
 
