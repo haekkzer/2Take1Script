@@ -10,7 +10,7 @@
 > - **IN2-Moist**, **1337Zero**, **C\*** and **Wolfry**, for their knownledge of how things work.
 > - **sub1to** and **Cynical Bastard**, for this awesome menu!
 > - **Danierutu**, for linking my script with documentation in the official 2Take1Docs site!
-> - **jhowkNx** and **TheSuspect**, for sharing of their created content, which could be included in the script. 
+> - **jhowkNx** and **TheSuspect**, for sharing of their created content, which could be included in the script.
 > - And all other People, who wrote a great suggestion and / or found issues in script!
 
 ### Table of Contents
@@ -25,7 +25,7 @@
 
 ## Setup
 
-Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/releases/download/2020-12-19/2Take1Script.zip). The script comes in a `2Take1Script.zip` file.
+Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/files/5733311/2Take1Script.zip). The script comes in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://docs.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
@@ -184,6 +184,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 ### Chat-Features
 
 - Chat-Log
+- Echo Chat X times
 - Kick if Russki Char is typed
 - Punish Money Beggers (see [note 6](#notes))
 - Send Message to 2Take1Script-Users
@@ -377,11 +378,6 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - autoexec Scripts from folder 'autoload' (see [note 12](#notes))
   - Leave-Session
   - Auto-Hostkick-Yourself
-- IPL-Loader
-  - Load ALL IPLs from File
-  - Select starting line for range
-  - Select ending line for range
-  - Remove ALL IPLs between selected Range
 - Dev Tools
   - Delete Entity from Aim
   - Get input Hash Key
@@ -422,6 +418,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Kill Player
   - Remove Current Weapon
   - Kick Player
+  - Taze Player
 - Bodyguards
   - Godmode for Bodyguards
   - Set Health of Bodyguards (5000-50000)
@@ -825,6 +822,15 @@ After enabling this option, the script will sleep and then load all scripts with
 - Or just paste the code snippet above to your other `autoexec.lua`
 
 ## Changelog
+
+### 2020-12-23
+
+- Removed IPL shit
+- Fixed `autoexec Scripts from folder 'autoload'` not always able to load scripts
+- Fixed `Send message to other 2Take1Script-Users`
+- Added `Taze Player` -\> `Aim Protection`
+- Added Custom Vehicle `XXL Lawn Mower`
+- Added `Echo Chat X times` -\> `Chat-Features` (NOT 2.11.0)
 
 ### 2020-12-19
 
