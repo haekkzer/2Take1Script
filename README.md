@@ -25,7 +25,7 @@
 
 ## Setup
 
-Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/files/5733311/2Take1Script.zip). The script comes in a `2Take1Script.zip` file.
+Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/files/5739738/2Take1Script.zip). The script comes in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://docs.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
@@ -183,8 +183,9 @@ If you have a problem loading this script, have a look [**here**](#common-questi
 
 ### Chat-Features
 
-- Chat-Log
 - Echo Chat X times
+- Ultra Spammer
+- Chat-Log
 - Kick if Russki Char is typed
 - Punish Money Beggers (see [note 6](#notes))
 - Send Message to 2Take1Script-Users
@@ -822,6 +823,11 @@ After enabling this option, the script will sleep and then load all scripts with
 - Or just paste the code snippet above to your other `autoexec.lua`
 
 ## Changelog
+
+### 2020-XX-XX
+
+- Fixed `Send Player to Island`
+- Added `Ultra Spammer` -\> `Chat-Features`
 
 ### 2020-12-23
 
