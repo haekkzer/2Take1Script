@@ -14,9 +14,7 @@
 > - And all other People, who wrote a great suggestion and / or found issues in script!
 
 Just in case if you really enjoy my script, have nothing better to do in your life, you might as well donate something :)  
-Here is my BTC adress:  
-`1DDYg96dEWf1fzuN7Fw9weiiwyjk1T9Ly2`  
-If you got problems, feel free to DM me on Discord (· · · · · - - · - · - · - · · ·#1337)
+To do so, DM me on Discord (· · · · · - - · - · - · - · · ·#1337)
 
 ### Table of Contents
 
@@ -30,7 +28,7 @@ If you got problems, feel free to DM me on Discord (· · · · · - - · - · -
 
 ## Setup
 
-Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/files/5751199/2Take1Script.zip). The script comes in a `2Take1Script.zip` file.
+Download the latest script release from [**#lua-script-share**](https://discord.com/channels/570999086874886154/614871694938472507) or from this git-repo [**download**](https://github.com/haekkzer/2Take1Script/releases/download/2021-01-15/2Take1Script.zip). The script comes in a `2Take1Script.zip` file.
 
 Extract the `.zip` file in the `scripts` folder from the menu (see the [**Scripts Guide**](https://docs.2take1.menu/features/local/scripts) for further details).
 If done right, your `scripts` folder should contain:
@@ -72,8 +70,7 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - Illegal Name
   - Modded IP / SCID
   - Modded Net-Events
-  - Explosion based blame killing (WIP)
-  - Forcing Script-Host
+  - Explosion based blame killing
   - Modded Script Event
 
 ### Lobby
@@ -214,6 +211,8 @@ If you have a problem loading this script, have a look [**here**](#common-questi
   - `!vehicle <name>`
   - `!bigpp <playername>`
   - `!bigppall`   \[SU\]
+  - `!vehiclegod <on/off>`
+  - `!weaponsall`
 - Delete Vehicles from `!lag`
 - Chat Commands for Friends
 - Chat Commands Everyone
@@ -836,6 +835,17 @@ After enabling this option, the script will sleep and then load all scripts with
 - Or just paste the code snippet above to your other `autoexec.lua`
 
 ## Changelog
+
+### 2021-01-15
+
+- Minor Improvements
+- Fixed little problem with `Fire Circle`
+- Fixed not marking as modder when detecting Explosion-Based-Blame-Killing
+- Removed Modder-Detection `Forcing Script Host`
+- Added new Bad-Net-Event
+- Added new Chat-Command `!vehiclegod <on/off>`
+- Added new Chat-Command `!weaponsall`
+- Added `Panther` to `Better Animal Changer`
 
 ### 2020-12-29
 
