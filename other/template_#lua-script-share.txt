@@ -1,0 +1,13 @@
+**__2Take1Script__**
+
+https://github.com/haekkzer/2Take1Script
+
+**Changelog**
+__XXXX-XX-XX__
+
+```
+
+```
+
+If you encounter any bugs / issues, have any suggestion, feel free to use the "Issue" function from Github.
+<https://github.com/haekkzer/2Take1Script/issues>
